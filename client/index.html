@@ -28,7 +28,7 @@
             font-size: 16px;
             cursor: pointer;
         }
-        #response {
+        #response, #lastValidResponse {
             margin-top: 20px;
             font-size: 18px;
             text-align: center;
@@ -41,8 +41,16 @@
         <button id="calculateBtn">Calculate</button>
     </div>
     <div id="response"></div>
+    <div id="lastValidResponse"></div>
 
     <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const lastResult = localStorage.getItem('lastValidResponse');
+            if (lastResult) {
+                document.getElementById('lastValidResponse').innerText = `Last Result: ${lastResult}`;
+            }
+        });
+
         document.getElementById('calculateBtn').addEventListener('click', () => {
             const inputValue = document.getElementById('inputField').value;
             
@@ -63,6 +71,8 @@
             })
             .then(data => {
                 document.getElementById('response').innerText = data;
+                document.getElementById('lastValidResponse').innerText = `Last Result: ${data}`;
+                localStorage.setItem('lastValidResponse', data);
             })
             .catch(error => {
                 document.getElementById('response').innerText = `Error: ${error.detail || 'An unexpected error occurred.'}`;
