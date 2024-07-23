@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
@@ -8,6 +8,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.Domain", "Calculator.Domain\Calculator.Domain.csproj", "{8D081A75-E988-4540-BEFE-7AF729CEFB08}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.Services", "Calculator.Services\Calculator.Services.csproj", "{B9FE76AF-8EDA-43D0-824C-29C3EFDF19D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Services.Tests", "Calculator.Services.Tests\Calculator.Services.Tests.csproj", "{3D2D600C-ADE4-4805-BADB-668DD92218D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{B9FE76AF-8EDA-43D0-824C-29C3EFDF19D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9FE76AF-8EDA-43D0-824C-29C3EFDF19D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9FE76AF-8EDA-43D0-824C-29C3EFDF19D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D2D600C-ADE4-4805-BADB-668DD92218D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D2D600C-ADE4-4805-BADB-668DD92218D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D2D600C-ADE4-4805-BADB-668DD92218D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D2D600C-ADE4-4805-BADB-668DD92218D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
